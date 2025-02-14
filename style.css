@@ -6,9 +6,21 @@ h2{
     color: blue;
     text-align: center;
     font-family: cursive;
-    font-size: 20;
+    font-size: 20px;
 }
 
 .color-primary{
     color: blue;
+}
+
+img {
+    width: 300px;
+}
+button{
+    color:olive;
+    background-color: antiquewhite;
+    font-family: cursive;
+    font-size:35px;
+    border-radius: 30px;
+    padding: 20px;
 }
