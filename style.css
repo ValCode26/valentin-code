@@ -1,3 +1,9 @@
+:root{
+    --primary:blue;
+    --secondary: #05fa3a;
+    --third: rgb(15, 0, 0);
+}
+
 body {
     background-image: url('https://i.postimg.cc/1tD53RbT/AE1.jpg');
     background-position: center;
@@ -61,7 +67,7 @@ button {
 
 button :hover {
     background-color: crimson;
-    color: antiquewhite;
+    color:var(--secondary);
 }
 
 p {
@@ -74,33 +80,52 @@ p {
     text-align: center;
     font-weight: 50px;
 }
+p.bg-primary{
+    background-color:var(--primary);
+}
 ul {
-    background-color: antiquewhite;
+    background-color: var(--secondary);
 }
 
 ul.bg-primary {
-    background-color: blue;
+    background-color: var(--primary);
 }
 
 ul .bg-secondary {
     background-color: green;
 }
-.tel{
+
+.tel {
     background-color: brown;
-    color: antiquewhite;
+    color: var(--secondary);
     text-align: center;
 }
-.imageTest{
+
+.imageTest {
     width: 600px;
+}
+
+@media (max-width: 600px) {
+    .imageTest {
+        width: 100%;
     }
-@media (max-width: 600px){
-    .imageTest{
-        width:100%;
+
+    .tel {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    ul.bg-primary {
+        background-color: green;
+        color: mediumblue;
     }
 }
-@media (max-width: 400px){
+
+@media (max-width: 400px) {
     ul.bg-primary {
         display: none;
         background-color: red;
-    } 
+        color: var(--third);
+    }
 }
