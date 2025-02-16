@@ -1,17 +1,15 @@
-:root{
-    --primary:blue;
-    --secondary: #05fa3a;
-    --third: rgb(15, 0, 0);
-}
-
 body {
-    background-image: url('https://i.postimg.cc/1tD53RbT/AE1.jpg');
-    background-position: center;
+    background-image: url('https://i.postimg.cc/Gpz0xM0d/IMG-2666-stack.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
-}
+    background-size: cover;
+  }
 
+:root{
+    --primary:rgb(251, 251, 255);
+    --secondary: #fad505;
+    --third: rgb(78, 210, 228);
+}
 h1 {
     color: white;
     text-align: center;
@@ -63,11 +61,6 @@ button {
     font-family: "joschmi", sans-serif;
     font-weight: 400px;
     font-style: normal;
-}
-
-button :hover {
-    background-color: crimson;
-    color:var(--secondary);
 }
 
 p {
