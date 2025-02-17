@@ -3,13 +3,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0px;
   }
-
-:root{
-    --primary:rgb(251, 251, 255);
+:root {
+    --primary: rgb(251, 251, 255);
     --secondary: #fad505;
     --third: rgb(78, 210, 228);
 }
+
 h1 {
     color: white;
     text-align: center;
@@ -39,6 +40,70 @@ h3 {
     font-size: 35px;
     margin: 0;
 }
+.main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-family: "joschmi", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+}
+.navbar a{
+color: white;
+text-decoration: none;
+padding: 15px;
+display:inline-flex;
+text-align: center;
+}
+.navbar a:hover{
+    background-color:violet;
+}
+.navbar li{
+    float: left;
+}
+.gallery{
+    display: inline-block;
+    border: 1px solid violet;
+    margin: 5px;
+    width: 300px;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 1px solid rgb(236, 155, 236);
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: #fad505;
+    font-size: 13em;
+    text-align: center;
+}
+img{
+    animation-name: slideleft;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    animation-direction: normal;
+    animation-play-state: running;
+animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+@keyframes slideleft{
+    from {transform: translate(300%);}
+}
+.bg-secondary
 
 .color-primary {
     color: white;
@@ -73,9 +138,11 @@ p {
     text-align: center;
     font-weight: 50px;
 }
-p.bg-primary{
-    background-color:var(--primary);
+
+p.bg-primary {
+    background-color: var(--primary);
 }
+
 ul {
     background-color: var(--secondary);
 }
@@ -95,7 +162,7 @@ ul .bg-secondary {
 }
 
 .imageTest {
-    width: 600px;
+    width: 250px;
 }
 
 @media (max-width: 600px) {
@@ -121,4 +188,4 @@ ul .bg-secondary {
         background-color: red;
         color: var(--third);
     }
-}
+}      
