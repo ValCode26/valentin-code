@@ -46,6 +46,11 @@ h3 {
     margin-left: 20px;
     margin-right: 20px;
 }
+.span {
+    align-items:center ;
+    justify-content: center;
+    display: flex;
+}
 
 .navbar ul {
     list-style-type: none;
