@@ -1,10 +1,11 @@
 body {
-   background-image: url(https://i.postimg.cc/VkDHqqgL/home1.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-  }
+    background-image: url(https://i.postimg.cc/VkDHqqgL/home1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 :root {
     --primary: rgb(251, 251, 255);
     --secondary: #fad505;
@@ -40,11 +41,13 @@ h3 {
     font-size: 35px;
     margin: 0;
 }
-.main{
+
+.main {
     margin-left: 20px;
     margin-right: 20px;
 }
-.navbar ul{
+
+.navbar ul {
     list-style-type: none;
     background-color: transparent;
     padding: 0px;
@@ -56,39 +59,45 @@ h3 {
     font-style: normal;
     text-align: center;
 }
-.navbar a{
-color: white;
-text-decoration: none;
-padding: 15px;
-display:inline-flex;
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-flex;
 }
-.navbar a:hover{
-    background-color:rgb(243, 112, 5);
+
+.navbar a:hover {
+    background-color: rgb(243, 112, 5);
 }
-.navbar li{
+
+.navbar li {
     float: left;
 }
-.gallery{
+
+.gallery {
     display: inline-block;
     border: 1px solid violet;
     margin: 5px;
     width: 200px;
 }
-.gallery .description{
+
+.gallery .description {
     padding: 10px;
     text-align: center;
     color: antiquewhite;
 }
-.gallery:hover{
+
+.gallery:hover {
     border: 1px solid rgb(236, 155, 236);
 }
-.gallery img{
+
+.gallery img {
     width: 100%;
     height: auto;
 }
-.bg-secondary
 
-.color-primary {
+.bg-secondary .color-primary {
     color: white;
 }
 
@@ -171,4 +180,4 @@ ul .bg-secondary {
         background-color: red;
         color: var(--third);
     }
-}      
+}
