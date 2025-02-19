@@ -23,7 +23,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:transparent;
+    background-color:#341a0a;
     color: white;
     position: fixed;
     width: 100%;
@@ -32,12 +32,10 @@ nav {
 
 nav img {
     width: 250px;
-    transition: 0.3 ease-in-out;
+    opacity: 0.7;
 }
-
-nav img:hover {
-    background: linear-gradient(to right, #ff0000, #eb710e);
-
+nav img:hover{
+    opacity: 1;
 }
 
 .menu {
@@ -57,7 +55,7 @@ nav img:hover {
 .menu-voice li a {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size:35px;
     opacity: 0.7;
     transition: 0.3 ease-in-out;
     letter-spacing: 1px;
@@ -73,7 +71,7 @@ nav img:hover {
     background-color: transparent;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 35px;
     padding: 15px 31px;
     border-radius: 25px;
     cursor: pointer;
@@ -115,55 +113,4 @@ color: white;
 }
 .content p{
    font-size:45px;
-}
-.footer {
-    width: 100vw;
-    display: block;
-    overflow: hidden;
-    padding: 70px 0;
-    box-sizing: border-box;
-    background-color: transparent;
-}
-
-.inner-footer{
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-    height: 100%;
-}
-.inner-footer .logo-container{
-    width: 35%;
-    float: left;
-    height: 100%;
-    display: block;
-}
-.inner-footer .logo-container img{
-    width: 65px;
-    height: auto;
-}
-.inner-footer .footer-third{
-    width: calc(21.6666666667% -20px);
-    margin-right: 10px;
-    float: left;
-    height: 100%;
-}
-.inner-footer .footer-third:last-child{
-margin-right: 0px;
-}
-.inner-footer .footer-third h1{
-    font-size: 18px;
-    color: white;
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.inner-footer .footer-third a{
-    font-size: 18px;
-    color: white;
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    font-weight: 200px;
-    padding-bottom: 5px;
-
 }
