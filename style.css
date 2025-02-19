@@ -1,3 +1,10 @@
+:root{
+   --darkcolor:red;
+   --lightcolor: white;
+
+}
+
+
 body {
     background-image: url(https://i.postimg.cc/VkDHqqgL/home1.jpg);
     background-position: center;
@@ -14,6 +21,7 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -89,10 +97,9 @@ nav img:hover {
 }
 
 .main-page .img {
-    width: 600px;
-    display: flex;
+    width: 550px;
     border: 3px solid white;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 60px;
     margin-right: 60px;
 }
@@ -104,7 +111,7 @@ nav img:hover {
     align-items: center;
     justify-content: center;
     margin: 150px auto;
-    width: 70%;
+    width: 100%;
     letter-spacing: 1px;
 }
 
@@ -114,8 +121,33 @@ nav img:hover {
 
 .content h1 {
     font-size: 80px;
+    padding:20px ;
+    margin-bottom: 40px;
 }
 
 .content p {
     font-size: 45px;
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-links{
+    display: flex;
+    margin-top: 50px;
+}
+.social-links li a{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: var(--darkcolor);
+    margin-right: 32px;
+    border-radius: 32px;
+    box-shadow: 0 0 6px 5px rgba(224, 168, 95, 0.247);
+    opacity: 0.8;
+}
+.social-links li a:hover{
+    opacity: 1;
 }
