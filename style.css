@@ -3,16 +3,22 @@
     --lightcolor: white;
     --social-links: #341a0a;
 }
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     text-decoration: none;
-    box-sizing: border-box;
+
 }
 
 nav {
     display: flex;
-    background-color:transparent;
+    background-color: var(--lightcolor);
     justify-content: space-between;
     align-items: center;
     padding: 25px 35px;
@@ -54,7 +60,7 @@ nav img:hover {
     font-family: "joschmi", sans-serif;
     scroll-behavior: smooth;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 35px;
     padding: 13.5px 31.5px;
     cursor: pointer;
@@ -71,7 +77,7 @@ nav img:hover {
     font-family: "joschmi", sans-serif;
     scroll-behavior: smooth;
     font-style: normal;
-    font-weight: 200px;
+    font-weight: 400px;
     font-size: 30px;
     color: var(--darkcolor);
     opacity: 0.8;
@@ -85,11 +91,17 @@ nav img:hover {
     color: var(--lightcolor);
 }
 
+@media (max-width:992px) {
+    .menu {
+        display: none;
+    }
+}
+
 .bgImage {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(images/Image-1.jpg);
+    background-image: url(images/background-7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,35 +110,35 @@ nav img:hover {
 
 @keyframes bgChange {
     0% {
-        background-image: url(images/Image-1.jpg);
+        background-image: url(images/background-7.jpg);
     }
 
     20% {
-        background-image: url(images/Image-1.jpg);
+        background-image: url(images/background-7.jpg);
     }
 
     25% {
-        background-image: url(images/Image-6.jpg);
+        background-image: url(images/background-2.jpg);
     }
 
     45% {
-        background-image: url(images/Image-6.jpg);
+        background-image: url(images/background-2.jpg);
     }
 
     50% {
-        background-image: url(images/Image-9.jpg);
+        background-image: url(images/background-3.jpg);
     }
 
     70% {
-        background-image: url(images/Image-9.jpg);
+        background-image: url(images/background-3.jpg);
     }
 
     75% {
-        background-image: url(images/Image-3.jpg);
+        background-image: url(images/background-3.jpg);
     }
 
     95% {
-        background-image: url(images/Image-3.jpg);
+        background-image: url(images/background-3.jpg);
     }
 }
 
@@ -156,7 +168,8 @@ nav img:hover {
     font-family: "joschmi", sans-serif;
     scroll-behavior: smooth;
     font-style: normal;
-    font-weight: 400px;
+    font-weight: 400;
+    color: var(--darkcolor);
     margin-bottom: 0px;
 }
 
@@ -166,7 +179,8 @@ nav img:hover {
     scroll-behavior: smooth;
     font-style: normal;
     font-weight: 400;
-    color: var(--darkcolor);
+    color: var(--lightcolor);
+    margin-bottom: 0px;
 }
 
 .content p {
@@ -174,7 +188,7 @@ nav img:hover {
     font-family: "joschmi", sans-serif;
     scroll-behavior: smooth;
     font-style: normal;
-    font-weight: 200px;
+    font-weight: 400;
     width: 60%;
     padding-bottom: 10px;
     text-align: center;
@@ -182,13 +196,13 @@ nav img:hover {
 
 .content button {
     color: var(--lightcolor);
-    border:none;
+    border: none;
     outline: none;
     font-size: 25px;
     font-family: "joschmi", sans-serif;
     scroll-behavior: smooth;
     font-style: normal;
-    font-weight: 200px;
+    font-weight: 400px;
     background-color: var(--lightcolor);
     color: var(--darkcolor);
     padding: 14px 20px;
@@ -196,9 +210,43 @@ nav img:hover {
     border-radius: 25px;
     transition: 0.5;
     opacity: 0.8;
+
 }
 
 .content button:hover {
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 50px;
+
+}
+
+.social-links a {
+    font-size: 30px;
+    font-family: "joschmi", sans-serif;
+    scroll-behavior: smooth;
+    font-style: normal;
+    font-weight: 200px;
+    color: var(--darkcolor);
+    background-color: var(--lightcolor);
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    opacity: 0.8;
+    box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.social-links a:hover {
     background-color: var(--darkcolor);
     color: var(--lightcolor);
     opacity: 1;
