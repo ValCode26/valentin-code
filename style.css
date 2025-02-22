@@ -9,6 +9,7 @@
     margin: 0;
     outline: 0;
     scroll-behavior: smooth;
+    box-sizing: content-box;
 
 }
 
@@ -265,7 +266,7 @@ footer h3:hover {
     background-color: var(--darkcolor);
     color: var(--lightcolor);
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:976px) {
     nav ul{
         position:absolute;
         background-color: var(--lightcolor);
