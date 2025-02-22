@@ -293,4 +293,7 @@ footer h3:hover {
     nav button{
         font-size: 18px;
     }
+    nav button{
+        display: none;
+    }
 }
