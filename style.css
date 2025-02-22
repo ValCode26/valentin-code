@@ -8,6 +8,7 @@
     margin: 0;
     outline: 0;
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -21,7 +22,7 @@ nav {
     background-color: var(--lightcolor);
     justify-content: space-between;
     align-items: center;
-    padding: 25px 35px;
+    padding: 20px 30px;
 }
 
 nav img {
@@ -48,7 +49,7 @@ nav img:hover {
     margin-right: 15px;
     list-style: none;
     font-family: "joschmi", sans-serif;
-    scroll-behavior: smooth;
+
     font-style: normal;
     font-weight: 200px;
 }
@@ -58,7 +59,6 @@ nav img:hover {
     border: none;
     border-radius: 50px;
     font-family: "joschmi", sans-serif;
-    scroll-behavior: smooth;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -75,7 +75,6 @@ nav img:hover {
 
 .menu-voice li a {
     font-family: "joschmi", sans-serif;
-    scroll-behavior: smooth;
     font-style: normal;
     font-weight: 400px;
     font-size: 30px;
@@ -166,7 +165,6 @@ nav img:hover {
 .content h1 {
     font-size: 80px;
     font-family: "joschmi", sans-serif;
-    scroll-behavior: smooth;
     font-style: normal;
     font-weight: 400;
     color: var(--darkcolor);
@@ -176,7 +174,6 @@ nav img:hover {
 .content h1 span {
     font-size: 80px;
     font-family: "joschmi", sans-serif;
-    scroll-behavior: smooth;
     font-style: normal;
     font-weight: 400;
     color: var(--lightcolor);
@@ -186,7 +183,6 @@ nav img:hover {
 .content p {
     font-size: 40px;
     font-family: "joschmi", sans-serif;
-    scroll-behavior: smooth;
     font-style: normal;
     font-weight: 400;
     width: 60%;
@@ -200,7 +196,6 @@ nav img:hover {
     outline: none;
     font-size: 25px;
     font-family: "joschmi", sans-serif;
-    scroll-behavior: smooth;
     font-style: normal;
     font-weight: 400px;
     background-color: var(--lightcolor);
@@ -230,25 +225,44 @@ nav img:hover {
 }
 
 .social-links a {
-    font-size: 30px;
+    font-size: 40px;
     font-family: "joschmi", sans-serif;
-    scroll-behavior: smooth;
     font-style: normal;
-    font-weight: 200px;
+    font-weight: 400;
     color: var(--darkcolor);
-    background-color: var(--lightcolor);
-    padding: 4px;
+    background-color: transparent;
+    padding: 8px;
     width: 40px;
     height: 40px;
-    text-decoration: none;
-    border-radius: 8px;
+    border-radius: 4px;
     opacity: 0.8;
-    box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.3);
 }
 
 .social-links a:hover {
-    background-color: var(--darkcolor);
+    background-color: transparent;
     color: var(--lightcolor);
     opacity: 1;
     cursor: pointer;
 }
+footer{
+    display: flex;
+    align-items: center;
+    background-color: var(--lightcolor);
+    color: var(--darkcolor);
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+}
+footer h3{
+    font-size: 20px;
+    font-family: "joschmi", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    opacity: 0.8;
+}
+footer h3:hover{
+    opacity: 1;
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+}
+
