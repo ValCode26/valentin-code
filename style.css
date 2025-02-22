@@ -289,4 +289,7 @@ footer h3:hover {
     .bgImage{
         top: 300px;
     }
+    nav button{
+        font-size: 18px;
+    }
 }
