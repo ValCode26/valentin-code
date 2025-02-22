@@ -1,6 +1,10 @@
-const toggle = document.querySelector('#toggle');
-const menu = document.querySelector('.menu');
-console.log(menu);
-toggle.addEventListener("click", function(){
-menu.style.display="flex";
-})
+let menubar = document.getElementById("menu");
+menubar.style.maxHeight='0px';
+function toggle (){
+    if (menubar.style.maxHeight=='0px'){
+        menubar.style.maxHeight='200px'
+    }
+    else {
+        menubar.style.maxHeight='0px'
+    }
+}

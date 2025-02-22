@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentin Borsan Photography</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/jeo8xks.css">
     <link rel="stylesheet" href="style.css">
 
@@ -14,8 +15,8 @@
 <body>
     <nav>
         <img src="images/logo-red.png" alt="logo">
-        <div class="menu">
-            <ul class="menu-voice">
+        <div>
+            <ul id="menu">
                 <li><a href="#" alt=" Galleris">Galleries</a> </li>
                 <li><a href="#" alt="Projects">Projects</a> </li>
                 <li><a href="#" alt="About">About</a> </li>
@@ -23,7 +24,9 @@
             </ul>
             <button>Contact</button>
         </div>
-            <img id= "toggle" src="images/bx-menu-alt-right.svg">
+        <div class="menu-icon">
+            <img src="images/icons8-menu-bar.svg" onclick="toggle()" alt="menu">
+        </div>
     </nav>
     <div class="bgImage">
         <div class="overlay">
