@@ -55,7 +55,7 @@ nav ul li {
     font-weight: 200px;
 }
 
-nav button {
+nav div button {
     color: var(--darkcolor);
     border: none;
     border-radius: 50px;
@@ -66,6 +66,7 @@ nav button {
     padding: 13.5px 31.5px;
     cursor: pointer;
     opacity: 0.8;
+    display: flex;
 }
 
 nav button:hover {
@@ -90,7 +91,8 @@ nav ul li a:hover {
     background-color: var(--darkcolor);
     color: var(--lightcolor);
 }
-nav .menu-icon{
+
+nav .menu-icon {
     display: none;
 }
 
@@ -121,8 +123,9 @@ nav .menu-icon{
     45% {
         background-image: url(/vbp-images/background-2.jpg);
     }
-    50%{
-        background-image:url(/vbp-images/background-3.jpg);
+
+    50% {
+        background-image: url(/vbp-images/background-3.jpg);
     }
 
     70% {
@@ -265,34 +268,42 @@ footer h3:hover {
     background-color: var(--darkcolor);
     color: var(--lightcolor);
 }
+
 @media screen and (max-width:976px) {
-    nav ul{
-        position:absolute;
+    nav ul {
+        position: absolute;
         background-color: var(--lightcolor);
         top: 120px;
         left: 0;
         right: 0;
         overflow: hidden;
         margin-top: 15px;
-        flex-direction:column;
+        flex-direction: column;
         text-align: center;
         font-size: 18px;
     }
-    nav .menu-icon{
+
+    nav .menu-icon {
         display: block;
     }
-    nav .menu-icon img{
+
+    nav .menu-icon img {
         height: 30px;
         width: 30px;
-    
+
     }
-    .bgImage{
+
+    .bgImage {
         top: 300px;
     }
-    nav button{
-        font-size: 18px;
+
+    nav img {
+        width: 40%;
     }
-    nav img{
-        width:40%;
+
+    nav div button {
+        display: block;
+        font-size: 15px;
+        padding: 8px 15px;
     }
 }
