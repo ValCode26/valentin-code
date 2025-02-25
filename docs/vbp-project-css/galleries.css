@@ -1,0 +1,264 @@
+:root {
+    --darkcolor: red;
+    --lightcolor: white;
+    --social-links: #341a0a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "geographica-hand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-image: url(/vbp-images/Landscape-2.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: bgChange 20s linear infinite;
+}
+
+nav {
+    display: flex;
+    background-color: var(--lightcolor);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+nav img {
+    width: 250px;
+    opacity: 0.8;
+}
+
+nav img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+nav .menu-voice {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    color: var(--lightcolor);
+}
+
+nav ul li {
+    margin-right: 15px;
+    list-style: none;
+    font-family: "geographica-hand", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+nav button {
+    color: var(--darkcolor);
+    border: none;
+    border-radius: 50px;
+    font-family: "geographica-hand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    padding: 13.5px 31.5px;
+    cursor: pointer;
+    opacity: 0.8;
+    display: flex;
+}
+
+nav button:hover {
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+    opacity: 1;
+}
+
+nav ul li a {
+    font-family: "geographica-hand", sans-serif;
+font-weight: 400;
+font-style: normal;
+    font-size: 30px;
+    color: var(--darkcolor);
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--darkcolor);
+    opacity: 1;
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+
+@media screen and (max-width:976px) {
+    nav ul {
+        position: absolute;
+        background-color: var(--lightcolor);
+        top: 80px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin-top: 15px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .menu-icon img {
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .bgImage {
+        top: 250px;
+    }
+
+    nav img {
+        width: 40%;
+    }
+
+    nav button {
+        display: block;
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+}
+
+@keyframes bgChange {
+    0% {
+        background-image: url(/vbp-images/Landscape-3.jpg);
+    }
+
+    45% {
+        background-image: url(/vbp-images/Landscape-3.jpg);
+    }
+
+    50% {
+        background-image: url(/vbp-images/Monochrome-2.jpg);
+    }
+
+    95% {
+        background-image: url(/vbp-images/Monochrome-2.jpg);
+    }
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+h2 {
+    text-decoration: none;
+    list-style: none;
+    font-family: "geographica-hand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: var(--lightcolor);
+    padding: 4px 4px;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+h4 {
+    text-decoration: none;
+    font-family: "geographica-hand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    color: var(--darkcolor);
+    padding: 4px 4px;
+
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 8px;
+    align-items: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: var(--lightcolor);
+    color: var(--darkcolor);
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "geographica-hand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+    background-color: var(--social-links);
+    color: white;
+}
