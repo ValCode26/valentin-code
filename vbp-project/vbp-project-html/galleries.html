@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/vbp-project-css/galleries.css">
 </head>
 <nav>
-    <img src="/vbp-images/logo-red.png" alt="logo">
+    <img src="/vbp-images/logo-red-geographica.png" alt="logo">
     <div class="menu-voice">
         <ul id="menu">
             <li><a href="/vbp-project-html/galleries.html" alt=" Galleris">Galleries</a> </li>
@@ -25,10 +25,84 @@
         <img src="/vbp-images/icons8-menu-bar.svg" onclick="toggle()" alt="menu">
     </div>
 </nav>
-    <div class="bgImage"></div>
-    <div class="overlay"></div>
-<body>
-    <script src="/vbp-project-js/galleries.js"></script>
+<div class="bgImage"></div>
+<div class="overlay"></div>
+<div class="main">
+    <h2>Galleries</h2>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('Landscape')"> Landscape</button>
+        <button class="btn" onclick="filterSelection('Monochrome')"> Monochrome</button>
+        <button class="btn" onclick="filterSelection('Cityscape')"> Cityscape</button>
+    </div>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column Landscape">
+            <div class="content">
+                <img src="/vbp-images/Landscape-3.jpg" alt="Landscape" style="width:100%">
+                <h4>Praia do Senhor da Pedra</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column Landscape">
+            <div class="content">
+                <img src="/vbp-images/Landscape-1.jpg" alt="Landscape" style="width:100%">
+                <h4>Praia Fluvial de Unhais da Serra</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column Landscape">
+            <div class="content">
+                <img src="/vbp-images/Landscape-2.jpg" alt="Landscape" style="width:100%">
+                <h4>Espinho</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column Cityscape">
+            <div class="content">
+                <img src="/vbp-images/Cityscape-3.jpg" alt="Cityscape" style="width:100%">
+                <h4>Rua Serpe Pinto </h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column Cityscape">
+            <div class="content">
+                <img src="/vbp-images/Cityscape-1.jpg" alt="Cityscape" style="width:100%">
+                <h4>Sesimbra</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column Cityscape">
+            <div class="content">
+                <img src="/vbp-images/Cityscape-2.jpg" alt="Cityscape" style="width:100%">
+                <h4>Eternal City</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column Monochrome">
+            <div class="content">
+                <img src="/vbp-images/Monochrome-1.jpg" alt="Monochrome" style="width:100%">
+                <h4>Calm</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column Monochrome">
+            <div class="content">
+                <img src="/vbp-images/Monochrome-2.jpg" alt="Monochrome" style="width:100%">
+                <h4>Loneliness</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column Monochrome">
+            <div class="content">
+                <img src="/vbp-images/Monochrome-3.jpg" alt="Monochrome" style="width:100%">
+                <h4>Mirror</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+</div>
+<script src="/vbp-project-js/galleries.js"></script>
 </body>
-
-</html
+</html>
