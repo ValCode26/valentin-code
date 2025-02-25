@@ -24,7 +24,7 @@ body {
     height: 100%;
     text-decoration: none;
     background-image: url(/vbp-images/Landscape-2.jpg);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -150,19 +150,19 @@ nav .menu-icon {
 
 @keyframes bgChange {
     0% {
-        background-image: url(/vbp-images/Landscape-2.jpg);
+        background-image: url(/vbp-images/Landscape-3.jpg);
     }
 
     45% {
-        background-image: url(/vbp-images/Landscape-2.jpg);
+        background-image: url(/vbp-images/Landscape-3.jpg);
     }
 
     50% {
-        background-image: url(/vbp-images/Street-3.jpg);
+        background-image: url(/vbp-images/Monochrome-2.jpg);
     }
 
     95% {
-        background-image: url(/vbp-images/Street-3.jpg);
+        background-image: url(/vbp-images/Monochrome-2.jpg);
     }
 }
 
@@ -227,6 +227,7 @@ h4 {
 .content {
     background-color: white;
     padding: 8px;
+    align-items: center;
 }
 
 /* The "show" class is added to the filtered elements */
