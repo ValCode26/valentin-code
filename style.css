@@ -147,7 +147,7 @@ footer h3{
     letter-spacing: 1px;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:976px){
     #toggle{
         display: block;
         width: 70px;
