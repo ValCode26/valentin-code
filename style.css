@@ -165,6 +165,7 @@ footer h3 {
         display: block;
         width: 100px;
         cursor: pointer;
+        box-sizing: content-box;
         
     }
 
@@ -228,7 +229,7 @@ footer h3 {
     }
 
     nav img {
-        width: 250px;
+        width: 200px;
     }
 
     .hero h1 {
