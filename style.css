@@ -166,7 +166,7 @@ footer h3 {
         width: 100px;
         cursor: pointer;
         box-sizing: content-box;
-        
+        left:10px;
     }
 
     .topnav {
