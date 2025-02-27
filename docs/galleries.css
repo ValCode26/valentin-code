@@ -39,15 +39,6 @@ nav {
     padding: 20px 30px;
 }
 
-nav img {
-    width: 250px;
-    opacity: 0.8;
-}
-
-nav img:hover {
-    opacity: 1;
-    cursor: pointer;
-}
 
 nav .menu-voice {
     display: flex;
