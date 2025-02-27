@@ -6,134 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentin Borsan Photography</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/jeo8xks.css">
-    <link rel="stylesheet" href="/galleries.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<nav>
-    <img src="logo-red-geographica.png" alt="logo">
-    <div class="menu-voice">
-        <ul id="menu">
-            <li><a href="galleries.html" alt=" Galleris">Galleries</a> </li>
-            <li><a href="#" alt="Projects">Projects</a> </li>
-            <li><a href="#" alt="About">About</a> </li>
-            <li><a href="#" alt="Shop">Shop</a> </li>
-        </ul>
-        <button>Contact</button>
+<body>
+<main>
+  <nav>
+    <img src="logo-red.png" alt="Logo">
+    <div class="topnav">
+            <ul class="menu-voice">
+            <li class="links"><a href="#">Galleries</a></li>
+            <li class="links"><a href="#">Projects</a></li>
+            <li class="links"><a href="#">My Story</a></li>
+            <li class="links"><a href="#">Shop</a></li>
+            <li class="links"><a href="#">Contact</a></li>
+            </ul>
+            <button class="close-menu">Close</button>
     </div>
-    <div class="menu-icon">
-        <img src="icons8-menu-bar.svg" onclick="toggle()" alt="menu">
-    </div>
-</nav>
-<div class="bgImage"></div>
-<div class="overlay"></div>
-<div class="main">
-    <h2>Galleries</h2>
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('Landscape')"> Landscape</button>
-        <button class="btn" onclick="filterSelection('Monochrome')"> Monochrome</button>
-        <button class="btn" onclick="filterSelection('Cityscape')"> Cityscape</button>
-        <button class="btn" onclick="filterSelection('Street')"> Street</button>
-        <button class="btn" onclick="filterSelection('Animals')"> Animals</button>
-        <button class="btn" onclick="filterSelection('Close-up')"> Close-up</button>
-    </div>
-    <!-- Portfolio Gallery Grid -->
-    <div class="row">
-        <div class="column Landscape">
-            <div class="content">
-                <img src="Landscape-3.jpg" alt="Landscape" style="width:100%">
-                <h4>Praia do Senhor da Pedra</h4>
-            </div>
-        </div>
-        <div class="column Landscape">
-            <div class="content">
-                <img src="Landscape-1.jpg" alt="Landscape" style="width:100%">
-                <h4>Praia Fluvial de Unhais da Serra</h4>
-                
-            </div>
-        </div>
-        <div class="column Landscape">
-            <div class="content">
-                <img src="Landscape-2.jpg" alt="Landscape" style="width:100%">
-                <h4>Espinho</h4>
-            </div>
-        </div>
-            <div class="column Landscape">
-                <div class="content">
-                    <img src="Landscape-4.jpg" alt="Landscape" style="width:100%">
-                    <h4>Terminillo</h4>
-                </div>
-        </div>
-        <div class="column Landscape">
-            <div class="content">
-                <img src="Landscape-5.jpg" alt="Landscape" style="width:100%">
-                <h4>Terminillo II</h4>
-            </div>
-        </div>
-        <div class="column Landscape">
-            <div class="content">
-                <img src="Landscape-6.jpg" alt="Landscape" style="width:100%">
-                <h4>Praia do Senhor da Pedra</h4>
-            </div>
-        </div>
-        <div class="column Landscape">
-            <div class="content">
-                <img src="Landscape-7.jpg" alt="Landscape" style="width:100%">
-                <h4>Terminillo III</h4>
-            </div>
-        </div>
-        <div class="column Landscape">
-            <div class="content">
-                <img src="Landscape-8.jpg" alt="Landscape" style="width: 88%">
-                <h4>Terminiluccio</h4>
-            </div>
-        </div>
-        <div class="column Landscape">
-            <div class="content">
-                <img src="Landscape-9.jpg" alt="Landscape" style="width:100%">
-                <h4>Sunset</h4>
-            </div>
-        </div>
-        <div class="column Cityscape">
-            <div class="content">
-                <img src="Cityscape-3.jpg" alt="Cityscape" style="width:100%">
-                <h4>Rua Serpe Pinto </h4>
-            </div>
-        </div>
-        <div class="column Cityscape">
-            <div class="content">
-                <img src="Cityscape-1.jpg" alt="Cityscape" style="width:100%">
-                <h4>Sesimbra</h4>
-            </div>
-        </div>
-        <div class="column Cityscape">
-            <div class="content">
-                <img src="Cityscape-2.jpg" alt="Cityscape" style="width:100%">
-                <h4>Eternal City</h4>
-            </div>
-        </div>
-        <div class="column Monochrome">
-            <div class="content">
-                <img src="Monochrome-1.jpg" alt="Monochrome" style="width:68%">
-                <h4>Calm</h4>
-            </div>
-        </div>
-        <div class="column Monochrome">
-            <div class="content">
-                <img src="/Monochrome-3.jpg" alt="Monochrome" style="width:100%">
-                <h4>Loneliness</h4>
-            </div>
-        </div>
-        <div class="column Monochrome">
-            <div class="content">
-                <img src="Monochrome-2.jpg" alt="Monochrome" style="width:100%">
-                <h4>Mirror</h4>
-            </div>
-        </div>
-        <!-- END GRID -->
-    </div>
-</div>
-<script src="/galleries.js"></script>
+      <img id="toggle" src="bx-menu-alt-right.svg">
+  </nav>
+  <section>
+    <div class="hero">
+        <h1>GALL<span>RIES</span></h1>
+    </section>
+  <footer>
+    <h3>@Copyright Valentin  Borsan</h3>
+  </footer>
+</main>
+  <script src="scripts.js"></script>
 </body>
 </html>

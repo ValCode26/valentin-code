@@ -38,17 +38,20 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    
+
 }
-.topnav{
+
+.topnav {
     display: flex;
     align-items: center;
 }
-.topnav ul{
+
+.topnav ul {
     display: flex;
 
 }
-.links a{
+
+.links a {
     font-family: "joschmi", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -59,17 +62,19 @@ nav {
     padding: 8px;
     cursor: pointer;
     opacity: 0.8;
-   transition: color 1 ease;
+    transition: color 1 ease;
 
-    
+
 }
-.links a:hover{
+
+.links a:hover {
     background-color: transparent;
     color: var(--black);
     opacity: 1;
-border-bottom: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
 
 }
+
 nav img {
     width: 250px;
     opacity: 0.8;
@@ -79,45 +84,51 @@ nav img:hover {
     opacity: 1;
     cursor: pointer;
 }
-#toggle{
+
+#toggle {
     display: none;
 }
-.close-menu{
-   display: none;
+
+.close-menu {
+    display: none;
 
 }
-.hero{
+
+.hero {
     align-items: center;
     display: flex;
-justify-content: center;
-flex-direction: column; 
-margin-top: 0;  
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
 
 }
 
-.hero h1{
+.hero h1 {
     font-size: 100px;
     color: var(--red);
     margin-top: 25px;
 }
-.hero h1 span{
+
+.hero h1 span {
     font-size: 100px;
     color: var(--white);
 }
-.hero h3{
-    display:block;
+
+.hero h3 {
+    display: block;
     text-align: center;
     font-size: 60px;
     color: var(--white);
     margin-top: 30px;
     padding: 50px 50px;
 }
-.hero h3 span{
-color:var(--orange);
-font-size: 60px;
+
+.hero h3 span {
+    color: var(--red);
+    font-size: 60px;
 }
 
-.hero button{
+.hero button {
     font-size: 35px;
     color: var(--red);
     background-color: var(--white);
@@ -127,73 +138,88 @@ font-size: 60px;
     opacity: 0.8;
     transition: 0.3 ease-in-out;
 }
-.hero button:hover{
-opacity: 1;
-color: var(--white);
-background-color: var(--red);
+
+.hero button:hover {
+    opacity: 1;
+    color: var(--white);
+    background-color: var(--red);
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
     background-color: var(--white);
 }
-footer h3{
+
+footer h3 {
     font-size: 22px;
     color: var(--red);
     font-weight: 200px;
     letter-spacing: 1px;
 }
 
-@media screen and (max-width:976px){
-    #toggle{
+@media screen and (max-width:976px) {
+    #toggle {
         display: block;
         width: 100px;
         cursor: pointer;
         padding: 20px;
-}
-.topnav {
-   display:none;
-   position: absolute;
-   width: 100%;
-   height: 100vh;
-   text-align: center;
-   justify-content: center;
-    top:0;
-    flex-direction: column;
-}
-   .topnav .menu-voice {
+    }
+
+    .topnav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        top: 0;
+        flex-direction: column;
+    }
+
+    .topnav .menu-voice {
         flex-direction: column;
         text-align: center;
         margin-right: 0;
         padding-left: 0px;
-        padding-top:50px;
+        padding-top: 50px;
     }
-    .topnav .close-menu{
+
+    .topnav .close-menu {
         display: flex;
         cursor: pointer;
         font-size: 30px;
         border-radius: 15px;
         color: var(--white);
-        background-color:var(--red);
+        background-color: var(--red);
         padding: 8px;
         border: none;
 
     }
-    .menu-voice .links{
+
+    .menu-voice .links {
         padding: 15px;
     }
-    .menu-voice .links a{
+
+    .menu-voice .links a {
         background-color: transparent;
         color: var(--white);
         text-align: center;
         border-bottom: none;
     }
+
     nav img {
         width: 250px;
         padding: 20px 50px;
-}
-}
+    }
 
+    .hero h1 {
+        font-size: 80px;
+    }
+
+    .hero h1 span {
+        font-size: 80px;
+    }
+}
