@@ -150,8 +150,9 @@ footer h3{
 @media screen and (max-width:976px){
     #toggle{
         display: block;
-        width: 70px;
+        width: 100px;
         cursor: pointer;
+        padding: 20px;
 }
 .topnav {
    display:none;
@@ -168,7 +169,7 @@ footer h3{
         text-align: center;
         margin-right: 0;
         padding-left: 0px;
-        padding-top: 50px;
+        padding-top:50px;
     }
     .topnav .close-menu{
         display: flex;
@@ -190,6 +191,9 @@ footer h3{
         text-align: center;
         border-bottom: none;
     }
+    nav img {
+        width: 250px;
+        padding: 20px 50px;
 }
-
+}
 
