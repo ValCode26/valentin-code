@@ -165,7 +165,7 @@ footer h3 {
         display: block;
         width: 100px;
         cursor: pointer;
-        padding: 20px;
+        
     }
 
     .topnav {
@@ -228,8 +228,7 @@ footer h3 {
     }
 
     nav img {
-        width: 300px;
-        padding: 20px 20px;
+        width: 250px;
     }
 
     .hero h1 {

@@ -9,7 +9,7 @@ toggle.addEventListener("click", function(){
     menu.style.display = "flex";
 nav.style.padding = "0px";
 body.style.overflow = "hidden";
-hero.style.marginTop = "500px";
+hero.style.marginTop = "550px";
 
 });
 
