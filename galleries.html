@@ -2,91 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentin Borsan Photography</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jeo8xks.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="galleries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentin Borsan Photography</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jeo8xks.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="galleries.css">
 
 </head>
 
 <body>
-    <main>
-        <nav>
-            <img src="logo-red.png" alt="Logo">
-            <div class="topnav">
-                <ul class="menu-voice">
-                  <li class="links"><a href="index.html">Home</a></li>
-                    <li class="links"><a href="galleries.html">Galleries</a></li>
-                    <li class="links"><a href="#">Projects</a></li>
-                    <li class="links"><a href="#">About</a></li>
-                    <li class="links"><a href="#">Shop</a></li>
-                    <li class="links"><a href="#">Contact</a></li>
-                </ul>
-                <button class="close-menu">Close</button>
-            </div>
-            <img id="toggle" src="bx-menu-alt-right.svg">
-        </nav>
-          <div class="wrapper">
-            <h1>GALLE<span>RIES</span></h1>
-            <!-- filter Items -->
-            <nav>
-              <div class="items">
-                <span class="item active" data-name="all">All</span>
-                <span class="item" data-name="Landscape">Landscape</span>
-                <span class="item" data-name="Monochrome">Monochrome</span>
-                <span class="item" data-name="Cityscape">Cityscape</span>
-                <span class="item" data-name="Street">Street</span>
-                <span class="item" data-name="Animals">Animals</span>
-                <span class="item" data-name="Macro">Macro</span>
-              </div>
-            </nav>
-            <section>
-            <!-- filter Images -->
-            <div class="gallery">
-              <div class="image" data-name="Landscape"><span><img src="Landscape-1.jpg" alt=""></span></div>
-              <div class="image" data-name="Landscape"><span><img src="Landscape-2.jpg" alt=""></span></div>
-              <div class="image" data-name="Landscape"><span><img src="Landscape-3.jpg" alt=""></span></div>
-              <div class="image" data-name="Landscape"><span><img src="Landscape-4.jpg" alt=""></span></div>
-              <div class="image" data-name="Landscape"><span><img src="Landscape-5.jpg" alt=""></span></div>
-              <div class="image" data-name="Landscape"><span><img src="Landscape-6.jpg" alt=""></span></div>
-              <div class="image" data-name="Landscape"><span><img src="Landscape-7.jpg" alt=""></span></div>
-              <div class="image" data-name="Landscape"><span><img src="Landscape-8.jpg" alt=""></span></div>
-              <div class="image" data-name="Landscape"><span><img src="Landscape-9.jpg" alt=""></span></div>
-              <div class="image" data-name="Monochrome"><span><img src="Monochrome-1.jpg" alt=""></span></div>
-              <div class="image" data-name="Monochrome"><span><img src="Monochrome-2.jpg" alt=""></span></div>
-              <div class="image" data-name="Monochrome"><span><img src="Monochrome-3.jpg" alt=""></span></div>
-              <div class="image" data-name="Cityscape"><span><img src="Cityscape-1.jpg" alt=""></span></div>
-              <div class="image" data-name="Cityscape"><span><img src="Cityscape-2.jpg" alt=""></span></div>
-              <div class="image" data-name="Cityscape"><span><img src="Cityscape-3.jpg" alt=""></span></div>
-              <div class="image" data-name="Cityscape"><span><img src="Cityscape-4.jpg" alt=""></span></div>
-              <div class="image" data-name="Street"><span><img src="Street-1.jpg" alt=""></span></div>
-              <div class="image" data-name="Street"><span><img src="Street-2.jpg" alt=""></span></div>
-              <div class="image" data-name="Street"><span><img src="Street-3.jpg" alt=""></span></div>
-              <div class="image" data-name="Animals"><span><img src="Animal-1.jpg" alt=""></span></div>
-              <div class="image" data-name="Animals"><span><img src="Animal-2.jpg" alt=""></span></div>
-              <div class="image" data-name="Animals"><span><img src="Animal-3.jpg" alt=""></span></div>
-              <div class="image" data-name="Macro"><span><img src="Macro-1.jpg" alt=""></span></div>
+  <main>
+    <nav>
+      <img src="logo-red.png" alt="Logo">
+      <div class="topnav">
+        <ul class="menu-voice">
+          <li class="links"><a href="index.html">Home</a></li>
+          <li class="links"><a href="galleries.html">Galleries</a></li>
+          <li class="links"><a href="#">Projects</a></li>
+          <li class="links"><a href="#">About</a></li>
+          <li class="links"><a href="#">Shop</a></li>
+          <li class="links"><a href="#">Contact</a></li>
+        </ul>
+        <button class="close-menu">Close</button>
+      </div>
+      <img id="toggle" src="bx-menu-alt-right.svg">
+    </nav>
+    <div class="carousel">
+      <div class="list">
+
+        <div class="item" style="background-image: url(Landscape-1.jpg)">
+          <div class="content">
+            <div class="titlu">Landscape</div>
+            <div class="name">Praia Fluvial de Unhais da Serra </div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim animi ipsum accusamus
+              tempora, incidunt vel quia non quisquam nihil culpa porro nemo iusto odio fuga hic consequuntur
+              reprehenderit molestias.</div>
+            <div class="btn">
+              <button>See More</button>
             </div>
           </div>
-          <!-- fullscreen img preview box -->
-          <div class="preview-box">
-            <div class="details">
-              <span class="title">Image Category: <p></p></span>
-              <span class="icon fas fa-times"></span>
+        </div>
+
+        <div class="item" style="background-image: url(Monochrome-1.jpg);">
+          <div class="content">
+            <div class="titlu">Monochrome</div>
+            <div class="name">Loneliness</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim animi ipsum accusamus
+              tempora, incidunt vel quia non quisquam nihil culpa porro nemo iusto odio fuga hic consequuntur
+              reprehenderit molestias.</div>
+            <div class="btn">
+              <button>See More</button>
             </div>
-            <div class="image-box"><img src="" alt=""></div>
           </div>
-          <div class="shadow"></div>
-        </section>
-        <footer>
-            <h3>@Copyright Valentin Borsan</h3>
-        </footer>
-    </main>
-    <script src="galleries.js"></script>
+        </div>
+
+
+        <div class="item" style="background-image: url(Cityscape-3.jpg);">
+          <div class="content">
+            <div class="titlu">Cityscape</div>
+            <div class="name">Eternal City</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim animi ipsum accusamus
+              tempora, incidunt vel quia non quisquam nihil culpa porro nemo iusto odio fuga hic consequuntur
+              reprehenderit molestias.</div>
+            <div class="btn">
+              <button>See More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(Street-1.jpg);">
+          <div class="content">
+            <div class="titlu">Street</div>
+            <div class="name">Urban</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim animi ipsum accusamus
+              tempora, incidunt vel quia non quisquam nihil culpa porro nemo iusto odio fuga hic consequuntur
+              reprehenderit molestias.</div>
+            <div class="btn">
+              <button>See More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(Animal-1.jpg);">
+          <div class="content">
+            <div class="titlu">Animals</div>
+            <div class="name">Lucky</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim animi ipsum accusamus
+              tempora, incidunt vel quia non quisquam nihil culpa porro nemo iusto odio fuga hic consequuntur
+              reprehenderit molestias.</div>
+            <div class="btn">
+              <button>See More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(Macro-1.jpg);">
+          <div class="content">
+            <div class="titlu">Macro</div>
+            <div class="name">Dandellion</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim animi ipsum accusamus
+              tempora, incidunt vel quia non quisquam nihil culpa porro nemo iusto odio fuga hic consequuntur
+              reprehenderit molestias.</div>
+            <div class="btn">
+              <button>See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrows">
+        <button class="prev"> <</button>
+            <button class="next">></button>
+      </div>
+
+      <div class="timeRunning"></div>
+    </div>
+
+    <footer>
+      <h3>@Copyright Valentin Borsan</h3>
+    </footer>
+  </main>
+  <script src="galleries.js"></script>
 </body>
 
 </html>
