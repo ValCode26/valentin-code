@@ -3,7 +3,7 @@ const menu = document.querySelector('.topnav');
 const closemenu = document.querySelector('.close-menu');
 const nav = document.querySelector('nav');
 const body = document.querySelector('body');
-const hero = document.querySelector('.hero');
+const slider = document.querySelector('.hero');
 
 toggle.addEventListener("click", function(){
     menu.style.display = "flex";
