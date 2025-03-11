@@ -1,18 +1,20 @@
-const toggle = document.querySelector('#toggle');
-const menu = document.querySelector('.topnav');
-const closemenu = document.querySelector('.close-menu');
-const body = document.querySelector('body');
-const hero = document.querySelector('.hero');
+const filterContainer = document.querySelector(".gallery-filter"),
+ galleryItems = document.querySelectorAll(".gallery-item");
 
-toggle.addEventListener("click", function(){
-    menu.style.display = "flex";
-body.style.overflow = "hidden";
-hero.style.marginTop = "600px";
-
-});
-
-closemenu.addEventListener("click", function(){
-    menu.style.display = "none";
-    body.style.overflow = "auto";
-    hero.style.marginTop = "0";
-});
+ filterContainer.addEventListener("click", (event) =>{
+if(event.target.classList.contains("filter-item")){
+ filterContainer.querySelector(".active").classList.remove("active");
+ event.target.classList.add("active");
+ const filterValue = event.target.getAttribute("data-filter");
+  galleryItems.forEach((item) =>{
+ if(item.classList.contains(filterValue) || filterValue === 'all'){
+  item.classList.remove("hide");
+   item.classList.add("show");
+ }
+ else{
+  item.classList.remove("show");
+  item.classList.add("hide");
+ }
+  });
+}
+ });
