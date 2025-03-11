@@ -1,13 +1,17 @@
+
+
 :root {
   --title-color: red;
   --content-color: white;
   --font-text: "Castoro", serif;
-  --font-title: "Pirata One", system-ui;
-  --text-size: 20px;
-  --title-size: 60px;
+  --font-title: "Have Heart One";
+  --mobile-font: "Raleway", sans-serif;
+  --text-size: 25px;
+  --title-size: 80px;
   --nav-size: 30px;
   --header-size: 40px;
-  --span-color: black;
+  --span-color: black; 
+  --fill-color: white;
 }
 
 * {
@@ -30,21 +34,44 @@ body {
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
+
 }
 
 nav {
   text-align: center;
   display: flex;
   padding: 20px 50px;
-  background-color: transparent;
+  background-color:var(--content-color);
+
+}
+nav h1{
+  text-align: center;
+  font-family: "Have Heart One";
+  font-weight: 400;
+  font-size: 30px;
+  margin-right: 25px;
+    letter-spacing: 2px;
+    color: var(--span-color);
+  }
+  nav h1:hover{
+    transition: 0.5 ease-in-out;
+    color: var(--title-color);
+
+  }
+nav h1 span{
+  margin-right: 25px;
+  font-family: "Have Heart One";
+  color: var(--title-color);
+  font-weight: 400;
+  font-size: 30px;
+    letter-spacing: 2px;
 
 }
 
-nav img {
-  width: 20%;
-  margin-right: 80px;
+nav h1 span:hover{
+  transition: 0.5s ease-in-out;
+  color: var(--span-color);
 }
-
 .menu-bar {
   display: flex;
   align-items: center;
@@ -66,11 +93,12 @@ nav img {
   text-decoration: none;
   color: var(--title-color);
   font-family: var(--font-title);
+  letter-spacing: 1px;
 
 }
 
 .menu-voice a:hover {
-  color: var(--content-color);
+  color: var(--span-color);
 
 }
 
@@ -149,8 +177,8 @@ img {
 
 .gallery .gallery-filter .filter-item {
   color: var(--content-color);
-  font-size: var(--nav-size);
-  font-family: var(--font-title);
+  font-size: var(--text-size);
+  font-family: var(--mobile-font);
   text-transform: uppercase;
   display: inline-block;
   margin: 0 10px;
@@ -229,24 +257,28 @@ img {
 
 .menu-bar .menu-voice {
     flex-direction: column;
-    margin-right: 0;
+    align-items: center;
+    justify-content: center;
     padding-left: 0px;
-    padding-top: 50px;
-    margin-top: 20px;
+   margin-top: 80px;
 }
 
 .menu-bar .close-menu {
     display: flex;
     cursor: pointer;
     font-size: 35px;
-    color: var(--content-color);
+    font-family: var(--mobile-font);
+    font-weight: 900;
     background-color: transparent;
-    font-family: var(--font-title);
-    padding: 0;
     border: none;
-  align-items: center;
+    align-items: center;
     justify-content: center;
     opacity: 0.8;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
 
 }
 .menu-bar .close-menu:hover{
@@ -258,22 +290,29 @@ img {
 
 .menu-voice  a {
     background-color: transparent;
-    color: var(--content-color);
     text-align: center;
     border-bottom: none;
     font-size: 35px;
+    font-family: var(--mobile-font);
+    font-weight: 900;
     justify-content: center;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
 
 }
 .menu-voice a:hover {
-    color:var(--title-color);
-    background-color:transparent;
     transition: 0.3 ease-in-out;
+    background-size: 100%;
+    color: var(--title-color);
+   
+ 
 }
-
-nav img {
-    width: 60%;
 }
+nav h1 {
+  width: 100%;
 }
 
 
@@ -284,5 +323,7 @@ nav img {
 
   .gallery .gallery-filter .filter-item {
     margin-bottom: 10px;
+  
   }
 }
+

@@ -5,10 +5,11 @@ const closemenu = document.querySelector('.close-menu');
 const body = document.querySelector('body');
 const main = document.querySelector('main');
 
+
 toggle.addEventListener("click", function(){
     menu.style.display = "flex";
 body.style.overflow = "hidden";
-main.style.marginTop = "700px";
+main.style.marginTop = "600px";
 
 });
 
