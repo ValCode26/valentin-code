@@ -7,6 +7,7 @@
     --size-nav: 40px;
     --font-title: "Have Heart One";
     --font-text: "Montserrat", sans-serif;
+    --new-font:"rollerscript-smooth", sans-serif;
 }
 *{
     text-decoration: none;
@@ -20,7 +21,11 @@ body{
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    font-family: var(--new-font);
+    font-weight: 400px;
+    font-style: normal;
 }
+
 
 header {
     width: 100%;
@@ -34,7 +39,7 @@ nav{
     padding: 20px 50px;
 }
 nav img{
-    width:200px ;
+    width:250px ;
 }
 
 .menu-bar{
@@ -50,8 +55,8 @@ margin-left: 80px;
 }
 
 .menu-list li  a{
-    margin-right: 40px;
-    font-family: var(--font-title);
+    margin-right:30px;
+    font-family: var(--new-font);
     font-size: var(--size-nav);
     color:var(--color-primary) ;
     
@@ -64,19 +69,20 @@ margin-left: 80px;
 section .hero{
     text-align: center;
     margin-top: -550px;
-    font-family: var(--font-title);
+    font-family: var(--new-font);
     letter-spacing: 2px;
 }
 section .hero h1{
-    font-size: 100px;
+    font-size: 80px;
     color: var(--color-secondary);
     text-align: center;
+    margin-top: 120px;
     
     
 }
 
 section .hero h2 {
-    font-size: 80px;
+    font-size: 50px;
     color: var(--color-primary);
     text-align: center;
     margin-left: 50px;
@@ -93,11 +99,12 @@ section .hero button{
     padding: 15px;
     border-radius: 25px;
     color: var(--color-primary);
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
-    font-family: var(--font-title);
+    font-family: var(--font-text);
     letter-spacing: 2px;
 transition: 0.3s ease-in-out;
+margin-top: -200px;
 opacity: 0.8;
 }
 section .hero button:hover{
