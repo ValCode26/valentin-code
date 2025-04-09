@@ -15,24 +15,78 @@
   <header>
     <nav>
       <div class="menu-bar">
+        <a href="index.html">
       <img src="handwriter-logo2.jpg.png">
+        </a>
         <ul class="menu-list">
           <li><a href="#">About</a></li>
-          <li><a href="#">Galleries</a></li>
+          <li><a href="galleries.html">Galleries</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <button class="login">Login</button>
       </div>
     </nav>
   </header>
-  <section>
+  <main>
   <div class="hero">
       <h1>Welcome</h1>
       <h2>In the dance of <span>light</span> and <span>shadow</span>, photography gives voice to untold  stories of the soul.</h2>
       <button onclick="window.location.href='https://www.valentinborsan.art';">explore more</button>
     </div>
-  </section>
-  
+    <div class="wrapper">
+      <span class="icon-close">
+        <ion-icon name="close-outline"></ion-icon></span>
+      <div class="form-box login">
+       <h2>login</h2>
+       <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember Me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-register">
+          <p>Dont have an account?<a href="#" class="register-link">Register</a></p>
+        </div>
+       </form>
+      </div>
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+         <div class="input-box">
+           <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+           <input type="text" required>
+           <label>Username</label>
+         </div>
+         <div class="input-box">
+           <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+           <input type="password" required>
+           <label>Password</label>
+         </div>
+         <div class="remember-forgot">
+           <label><input type="checkbox">I agree with terms & conditions</label>
+         </div>
+         <button type="submit" class="btn">Register</button>
+         <div class="login-register">
+           <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+         </div>
+        </form>
+       </div>
+    </div>
+  </main>
 </body>
+<script src="index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

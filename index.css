@@ -10,6 +10,8 @@
     --new-font:"rollerscript-smooth", sans-serif;
 }
 *{
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style-type: none;
     box-sizing: content-box;
@@ -24,22 +26,35 @@ body{
     font-family: var(--new-font);
     font-weight: 400px;
     font-style: normal;
-}
+    min-height: 100vh;
+    justify-items: center;
+    justify-content: center;
 
+}
+main{
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+}
 
 header {
     width: 100%;
     height: 100vh;
     margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
 
 nav{
     display: flex;
     background-color: transparent;
     padding: 20px 50px;
+    position: relative;
 }
 nav img{
     width:250px ;
+    margin-right:20px;
 }
 
 .menu-bar{
@@ -49,50 +64,76 @@ nav img{
 .menu-list{
 justify-content: space-between;
 display: flex;
-margin-left: 80px;
-
-
+margin-left: 50px;
 }
-
 .menu-list li  a{
-    margin-right:30px;
+    margin-right:40px;
     font-family: var(--new-font);
     font-size: var(--size-nav);
     color:var(--color-primary) ;
+    border-bottom:2px solid var(--color-secondary) ;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.5s;
+    
     
 }
 .menu-list li a:hover{
     
     color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-primary);
+    transform: scaleX(1);
+    transform-origin: left;
     
 }
-section .hero{
+.menu-bar .login {
+    font-size: 30px;
+    color: var(--color-secondary);
+    background-color: transparent;
+    font-family: var(--new-font);
+    font-weight: 500;
+    padding: 6px;
+    cursor: pointer;
+    opacity: 0.8;
+    border: 2px solid var(--color-primary);
+    width: 130px;
+    height: 50px;
+    outline: none;
+    margin-left: 20px;
+}
+
+.menu-bar .login:hover{
+    color:var(--color-border);
+    opacity: 1;
+    border: 2px solid var(--color-border);
+}
+main .hero{
     text-align: center;
     margin-top: -550px;
     font-family: var(--new-font);
     letter-spacing: 2px;
 }
-section .hero h1{
+main .hero h1{
     font-size: 80px;
     color: var(--color-secondary);
     text-align: center;
-    margin-top: 120px;
+    margin-top: 80px;
     
     
 }
 
-section .hero h2 {
+main .hero h2 {
     font-size: 50px;
     color: var(--color-primary);
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: -20px;
+    margin-top: 0;
 }
-section .hero h2 span{
+main.hero h2 span{
     color:var(--color-secondary);
 }
-section .hero button{
+main .hero button{
     cursor: pointer;
     background-color: var(--color-secondary);
     border: 2px 2px solid var(--color-border);
@@ -104,12 +145,169 @@ section .hero button{
     font-family: var(--font-text);
     letter-spacing: 2px;
 transition: 0.3s ease-in-out;
-margin-top: -200px;
+margin-top: 40px;
 opacity: 0.8;
 }
-section .hero button:hover{
+main .hero button:hover{
     background-color: var(--color-primary);
     color: var(--color-secondary);
     opacity: 1;
     transition: 0.3s ease-in-out;
+}
+ .wrapper{
+    position: relative;
+    margin-top: 60px;
+     background: transparent;
+     border: 2px solid rgba(255, 255, 255 .5);
+     border-radius: 25px;
+     backdrop-filter: blur(20px);
+     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    color: var(--color-secondary);
+    font-size: 25px;
+    font-family:var(--new-font);
+    width: 400px;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height .2s ease;
+  
+  
+}
+ .wrapper.active{
+    height: 520px;
+}
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: var(--color-secondary);
+    font-size: 2em;
+    color: var(--color-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+ .wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+.wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper .form-box.login.active{
+    transition: none;
+    transform: translateX(-450px);
+    
+}
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .form-box.register{
+    position:absolute;
+    transform: translateX(450px);
+    transition: none;
+}
+.form-box h2{
+    font-size: 2em;
+    color: var(--color-secondary);
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--color-border);
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size:20px; 
+    color:var(--color-primary);
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: var(--color-secondary);
+    font-family: var(--new-font);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+top: -5px
+}
+.input-box .icon{
+position: absolute;
+right: 8px;
+font-size: 1.2em;
+color: var(--color-secondary);
+line-height: 57px;
+}
+
+.remember-forgot{
+    font-size: 0.9em;
+    color:var(--color-secondary);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: var(--color-border);
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    font-family: var(--new-font);
+    font-size:1em ;
+    font-weight: 500;
+}
+.login-register{
+    font-size: 0.9em;
+    color:var(--color-secondary);
+    text-align: center;
+    font-family: var(--new-font);
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    color: var(--color-border);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 6px;
+}
+.login-register p a:hover{
+    text-decoration: underline;
 }

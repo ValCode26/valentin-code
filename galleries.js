@@ -1,81 +1,62 @@
-const toggle = document.querySelector('#toggle');
-const menu = document.querySelector('.topnav');
-const closemenu = document.querySelector('.close-menu');
-const body = document.querySelector('body');
-const slider = document.querySelector('.slider');
+let xPos = 0;
 
-toggle.addEventListener("click", function(){
-    menu.style.display = "flex";
-body.style.overflow = "hidden";
-slider.style.marginTop = "700px";
-
-});
-
-closemenu.addEventListener("click", function(){
-    menu.style.display = "none";
-    body.style.overflow = "auto";
-    slider.style.marginTop = "0";
-});
-
-
-let items = document.querySelectorAll('.slider .list .item');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
-let thumbnails = document.querySelectorAll('.thumbnail .item');
-
-// config param
-let countItem = items.length;
-let itemActive = 0;
-// event next click
-next.onclick = function(){
-    itemActive = itemActive + 1;
-    if(itemActive >= countItem){
-        itemActive = 0;
-    }
-    showSlider();
-}
-//event prev click
-prev.onclick = function(){
-    itemActive = itemActive - 1;
-    if(itemActive < 0){
-        itemActive = countItem - 1;
-    }
-    showSlider();
-}
-// auto run slider
-let refreshInterval = setInterval(() => {
-    next.click();
-}, 5000)
-function showSlider(){
-    // remove item active old
-    let itemActiveOld = document.querySelector('.slider .list .item.active');
-    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
-    itemActiveOld.classList.remove('active');
-    thumbnailActiveOld.classList.remove('active');
-
-    // active new item
-    items[itemActive].classList.add('active');
-    thumbnails[itemActive].classList.add('active');
-    setPositionThumbnail();
-
-    // clear auto time run slider
-    clearInterval(refreshInterval);
-    refreshInterval = setInterval(() => {
-        next.click();
-    }, 5000)
-}
-function setPositionThumbnail () {
-    let thumbnailActive = document.querySelector('.thumbnail .item.active');
-    let rect = thumbnailActive.getBoundingClientRect();
-    if (rect.left < 0 || rect.right > window.innerWidth) {
-        thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
-    }
-}
-
-// click thumbnail
-thumbnails.forEach((thumbnail, index) => {
-    thumbnail.addEventListener('click', () => {
-        itemActive = index;
-        showSlider();
+gsap.timeline()
+    .set('.ring', { rotationY:180, cursor:'grab' }) //set initial rotationY so the parallax jump happens off screen
+    .set('.img',  { // apply transform rotations to each image
+      rotateY: (i)=> i*-36,
+      transformOrigin: '50% 50% 500px',
+      z: -500,
+      backgroundImage:(i)=>'url(https://picsum.photos/id/'+(i+32)+'/600/400/)',
+      backgroundPosition:(i)=>getBgPos(i),
+      backfaceVisibility:'hidden'
+    })    
+    .from('.img', {
+      duration:1.5,
+      y:200,
+      opacity:0,
+      stagger:0.1,
+      ease:'expo'
     })
-})
+    .add(()=>{
+      $('.img').on('mouseenter', (e)=>{
+        let current = e.currentTarget;
+        gsap.to('.img', {opacity:(i,t)=>(t==current)? 1:0.5, ease:'power3'})
+      })
+      $('.img').on('mouseleave', (e)=>{
+        gsap.to('.img', {opacity:1, ease:'power2.inOut'})
+      })
+    }, '-=0.5')
+
+$(window).on('mousedown touchstart', dragStart);
+$(window).on('mouseup touchend', dragEnd);
+      
+
+function dragStart(e){ 
+  if (e.touches) e.clientX = e.touches[0].clientX;
+  xPos = Math.round(e.clientX);
+  gsap.set('.ring', {cursor:'grabbing'})
+  $(window).on('mousemove touchmove', drag);
+}
+
+
+function drag(e){
+  if (e.touches) e.clientX = e.touches[0].clientX;    
+
+  gsap.to('.ring', {
+    rotationY: '-=' +( (Math.round(e.clientX)-xPos)%360 ),
+    onUpdate:()=>{ gsap.set('.img', { backgroundPosition:(i)=>getBgPos(i) }) }
+  });
+  
+  xPos = Math.round(e.clientX);
+}
+
+
+function dragEnd(e){
+  $(window).off('mousemove touchmove', drag);
+  gsap.set('.ring', {cursor:'grab'});
+}
+
+
+function getBgPos(i){ //returns the background-position string to create parallax movement in each image
+  return ( 100-gsap.utils.wrap(0,360,gsap.getProperty('.ring', 'rotationY')-180-i*36)/360*500 )+'px 0px';
+}
