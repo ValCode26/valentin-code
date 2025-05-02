@@ -1,26 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valentin Borsan Photography</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://use.typekit.net/jeo8xks.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-  <nav>
-    <div class="logo">Valentin Borsan Photography</div>
-    <div class="menu-icon" id="openMenu">&#9776;</div> <!-- iconiță hamburger -->
-  </nav>
 
-  <div class="overlay" id="menuOverlay">
-    <div class="close-btn" id="closeMenu">&times;</div>
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">Galleries</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </div>
+<body>
+  <header class="nav-header">
+    <nav class="navbar">
+      <a href="#" class="logo">Valentin Borsan</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger"></span>
+      </label>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <h1><b>Welcome</b></h1>
+      <h2><b>My work is a pursuit of light, detail, and honest emotion.</b></h2>
+      <h3><b>Thank you for being here!</b><span><b><br>I invite you to explore the stories behind each
+            image.</br></b></span></h3>
+      <a href="/portfolio" class="cta-button">View Portfolio</a>
+    </div>
+    <section id="featured-project" class="project-section">
+      <h2>Terminillo </h2>
+      <div class="project-card">
+        <a href="#">
+          <img src="Terminillo.jpg" alt="Terminillo">
+          <div class="project-info">
+            <h3>Where Earth Touch the Sky</h3>
+            <p> For this photographic project, Terminillo becomes a study in contrasts—from intimate textures of moss
+              and
+              lichen to sweeping panoramas beneath ever-changing skies—where each season tells its own story of light
+              and emotion.</p>
+            <span class="btn">View Project</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2025 Valentin Borsan. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://instagram.com/valentinborsan" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://facebook.com/valentinborsan" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://linkedin.com/in/valentinborsan" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </footer>
 </body>
 <script src="index.js"></script>
+
 </html>
