@@ -3,33 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valentin Borsan | Photography</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>Valentin Borsan Photography</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.typekit.net/jeo8xks.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body>
+  <nav>
+    <div class="logo">Valentin Borsan Photography</div>
+    <div class="menu-icon" id="openMenu">&#9776;</div> <!-- iconiță hamburger -->
+  </nav>
 
-  <header>
-    <h1>Valentin Borsan Portraits</h1>
-    <p>Visual storytelling through portraits</p>
-  </header>
-
-  <main class="max-w-5xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <img src="images/Alice.jpg" alt="Portrait 1" class="gallery-img rounded-xl shadow cursor-pointer" />
-    <img src="images/Alice II.jpg" alt="Portrait 2" class="gallery-img rounded-xl shadow cursor-pointer" />
-    <img src="images/Echo I.jpg" alt="Portrait 3" class="gallery-img rounded-xl shadow cursor-pointer" />
-  </main>
-
-  <!-- Lightbox overlay -->
-  <div id="lightbox" class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-    <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain rounded shadow-2xl" />
+  <div class="overlay" id="menuOverlay">
+    <div class="close-btn" id="closeMenu">&times;</div>
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Galleries</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
   </div>
-
-  <footer class="text-center p-4 mt-12 text-sm text-gray-500">
-    © 2025 Valentin Borsan. All rights reserved.
-  </footer>
-
-  <script src="script.js"></script>
 </body>
+<script src="scripts.js"></script>
 </html>
