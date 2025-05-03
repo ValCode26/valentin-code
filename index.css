@@ -96,7 +96,7 @@ nav {
 .hamburger div {
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color:white;
   margin: 4px 0;
   transition: 0.4s;
 }
@@ -176,6 +176,12 @@ body.no-scroll {
     padding: 10px;
     border-radius: 6px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  .hero{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
   }
 }
 .hero {
