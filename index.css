@@ -24,17 +24,18 @@ nav {
   align-items: center;
   padding: 1rem 2rem;
   position: relative;
-  font-family: "gizmo", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .logo {
   font-size: 3rem;
   font-weight: bold;
-  font-family: "gizmo", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  ;
 }
 
 .nav-links {
@@ -78,10 +79,10 @@ font-style: normal;
   padding: 0.7rem 1rem;
   color: orangered;
   background-color: white;
-  font-family: 14px;
+  font-size: 14px;
   font-family: "gizmo", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .dropdown-content a:hover {
@@ -237,6 +238,7 @@ body.no-scroll {
     font-size: 12px;
 
   }
+
   .logo {
     z-index: 100;
     width: auto;
@@ -249,12 +251,9 @@ body.no-scroll {
   display: block;
   text-align: center;
   justify-content: center;
-  color: white;
-  font-family: "gloss-drop", cursive;
-font-weight: 400;
-font-family: "gizmo", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .hero h1 {
@@ -291,9 +290,9 @@ font-style: normal;
   transition: transform 0.2s ease, background-color 0.2s ease;
   opacity: 0.7;
   margin-top: 25px;
-  font-family: "gizmo", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .cta-button:hover {
@@ -325,8 +324,8 @@ font-style: normal;
   font-size: 50px;
   margin-bottom: 1.5rem;
   color: orangered;
-  font-family: "gizmo", sans-serif;
-  font-weight: 400;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
   font-style: normal;
 
 
@@ -360,18 +359,18 @@ font-style: normal;
   margin: 0 0 0.5rem;
   font-size: 1.5em;
   color: white;
- font-family: "gizmo", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .project-info p {
   margin: 0 0 1rem;
   font-size: 35px;
   color: white;
-  font-family: "gizmo", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Re-folosești butonul dinainte sau poți crea unul specific */
@@ -390,9 +389,9 @@ font-style: normal;
   transition: transform 0.2s ease, background-color 0.2s ease;
   opacity: 0.7;
   margin-top: 25px;
-  font-family: "gizmo", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .project-info .btn:hover {
@@ -409,9 +408,9 @@ font-style: normal;
   font-size: 30px;
   color: white;
   margin-top: 4rem;
-  font-family: "gizmo", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .site-footer .social-icons {
@@ -429,5 +428,75 @@ font-style: normal;
 }
 
 .site-footer .social-icons a:hover {
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.modal input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.modal-content button {
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.auth-button {
+  padding: 0.7rem;
+  width: 100%;
+  background-color: transparent;
+  color: orangered;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  align-items: center;
+  font-size: 40px;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
   color: white;
 }

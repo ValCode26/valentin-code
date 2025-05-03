@@ -19,3 +19,24 @@ overlay.addEventListener('click', () => {
 
   document.body.classList.remove('no-scroll');
 });
+function toggleModal() {
+  const modal = document.getElementById('authModal');
+  modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+}
+
+function switchForm(form) {
+  document.getElementById('loginForm').style.display = form === 'login' ? 'block' : 'none';
+  document.getElementById('signupForm').style.display = form === 'signup' ? 'block' : 'none';
+}
+
+function handleLogin() {
+  const email = document.getElementById('loginEmail').value;
+  const pass = document.getElementById('loginPassword').value;
+  alert(`Login cu: ${email} / ${pass}`);
+}
+
+function handleSignup() {
+  const email = document.getElementById('signupEmail').value;
+  const pass = document.getElementById('signupPassword').value;
+  alert(`Cont creat: ${email}`);
+}

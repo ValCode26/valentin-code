@@ -15,9 +15,7 @@
     <div class="menu-overlay" id="menuOverlay"></div>
 
     <div class="logo">Valentin Borsan Photography</div>
-
-
-
+    
     <div class="hamburger" id="hamburger">
       <div class="line1"></div>
       <div class="line2"></div>
@@ -75,7 +73,31 @@
           </div>
         </a>
       </div>
+      <div class="auth-button-container">
+        <button class="auth-button" onclick="toggleModal()">Autentificare</button>
+      </div>
     </section>
+    <div id="authModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="toggleModal()">&times;</span>
+        
+        <div id="loginForm">
+          <h2>Login</h2>
+          <input type="text" placeholder="Email" id="loginEmail">
+          <input type="password" placeholder="Parolă" id="loginPassword">
+          <button onclick="handleLogin()">Login</button>
+          <p>Nu ai cont? <a href="#" onclick="switchForm('signup')">Creează cont</a></p>
+        </div>
+    
+        <div id="signupForm" style="display:none;">
+          <h2>Sign Up</h2>
+          <input type="text" placeholder="Email" id="signupEmail">
+          <input type="password" placeholder="Parolă" id="signupPassword">
+          <button onclick="handleSignup()">Creează cont</button>
+          <p>Ai deja cont? <a href="#" onclick="switchForm('login')">Login</a></p>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="site-footer">
     <p>&copy; 2025 Valentin Borsan. All rights reserved.</p>
