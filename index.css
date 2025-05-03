@@ -30,7 +30,7 @@ nav {
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   font-family: "lourdes", sans-serif;
   font-weight: 700;
@@ -49,7 +49,7 @@ nav {
   text-decoration: none;
   position: relative;
   padding: 0.5rem;
-  font-size: 40px;
+  font-size: 35px;
 
 }
 
@@ -79,10 +79,11 @@ nav {
   padding: 0.7rem 1rem;
   color: orangered;
   background-color: white;
-  font-size: 14px;
-  font-family: "gizmo", sans-serif;
-  font-weight: 400;
+  font-size: 30px;
+  font-family: "lourdes", sans-serif;
+  font-weight: 700;
   font-style: normal;
+
 }
 
 .dropdown-content a:hover {
@@ -257,22 +258,24 @@ body.no-scroll {
 }
 
 .hero h1 {
-  font-size: 80px;
+  font-size: 70px;
   padding: 30px 30px;
+  color: orangered;
 }
 
 .hero h2 {
-  font-size: 60px;
+  font-size: 50px;
   margin-left: 100px;
   margin-right: 100px;
+  color: white;
 }
 
 .hero h3 {
-  font-size: 50px;
+  font-size: 40px;
   margin-left: 80px;
   margin-right: 80px;
   color: white;
-}
+}s
 
 .hero span {
   color: orangered;
@@ -281,10 +284,10 @@ body.no-scroll {
 .cta-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  font-size: 45px;
+  font-size: 35px;
   text-decoration: none;
   color: #ffffff;
-  background-color: transparent;
+  background-color: orangered;
   border-radius: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, background-color 0.2s ease;
@@ -366,7 +369,7 @@ body.no-scroll {
 
 .project-info p {
   margin: 0 0 1rem;
-  font-size: 35px;
+  font-size: 25px;
   color: white;
   font-family: "lourdes", sans-serif;
   font-weight: 700;
@@ -379,7 +382,7 @@ body.no-scroll {
   padding: 0.5rem 1rem;
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 600;
   text-decoration: none;
   color: white;
