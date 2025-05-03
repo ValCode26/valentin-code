@@ -237,6 +237,11 @@ body.no-scroll {
     font-size: 12px;
 
   }
+  .logo {
+    z-index: 100;
+    width: auto;
+    height: auto;
+  }
 
 }
 
