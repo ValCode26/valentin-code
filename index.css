@@ -170,6 +170,7 @@ body.no-scroll {
   }
   .logo{
     z-index: 100;
+    width: 50%;
   }
   .dropdown-content {
     position: static; /* sau relative, dacă e deja bine */
@@ -177,13 +178,33 @@ body.no-scroll {
     border-radius: 6px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   }
-  .hero{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-  }
 }
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    nav a {
+      font-size: 14px;
+    }
+  
+    footer {
+      font-size: 12px;
+    }
+  }
 .hero {
     display: block;
     text-align: center;
