@@ -24,18 +24,17 @@ nav {
   align-items: center;
   padding: 1rem 2rem;
   position: relative;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
+  font-family: "milk-script", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  ;
 }
 
 .nav-links {
@@ -80,9 +79,9 @@ nav {
   color: orangered;
   background-color: white;
   font-size: 30px;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 
 }
 
@@ -252,9 +251,9 @@ body.no-scroll {
   display: block;
   text-align: center;
   justify-content: center;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .hero h1 {
@@ -293,9 +292,9 @@ body.no-scroll {
   transition: transform 0.2s ease, background-color 0.2s ease;
   opacity: 0.7;
   margin-top: 25px;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .cta-button:hover {
@@ -327,9 +326,9 @@ body.no-scroll {
   font-size: 50px;
   margin-bottom: 1.5rem;
   color: orangered;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 
 
 }
@@ -362,18 +361,18 @@ body.no-scroll {
   margin: 0 0 0.5rem;
   font-size: 1.5em;
   color: white;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .project-info p {
   margin: 0 0 1rem;
   font-size: 25px;
   color: white;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 /* Re-folosești butonul dinainte sau poți crea unul specific */
@@ -392,9 +391,9 @@ body.no-scroll {
   transition: transform 0.2s ease, background-color 0.2s ease;
   opacity: 0.7;
   margin-top: 25px;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .project-info .btn:hover {
@@ -411,9 +410,9 @@ body.no-scroll {
   font-size: 30px;
   color: white;
   margin-top: 4rem;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .site-footer .social-icons {
@@ -455,9 +454,9 @@ body.no-scroll {
   max-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   text-align: center;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
   font-size: 20px;
 }
 
@@ -467,16 +466,16 @@ body.no-scroll {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
+  font-family: "milk-script", sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: 20px;
 }
 
 .modal-content button {
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
   font-size: 20px;
 }
 
@@ -490,9 +489,9 @@ body.no-scroll {
   margin-top: 1rem;
   align-items: center;
   font-size: 40px;
-  font-family: "lourdes", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "milk-script", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .close {
