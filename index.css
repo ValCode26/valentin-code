@@ -175,6 +175,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 2rem;
     min-height:auto;
+    margin-top: 60px;
 
   }
 
@@ -192,11 +193,6 @@ nav ul li a:hover {
   .cta-button {
     font-size: 25px;
     padding: 0.8rem 1.8rem;
-  }
-  .typing {
-    animation: none;
-    border: none;
-    width: auto;
   }
 }
 
