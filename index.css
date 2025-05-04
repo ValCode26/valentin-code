@@ -510,18 +510,14 @@ section h2 {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  font-family: "brushland", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  
 }
 
 .auth-form input {
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-family: "brushland", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  
 }
 
 .auth-form button {
@@ -532,9 +528,7 @@ section h2 {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  font-family: "brushland", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  
 }
 
 .auth-form.hidden {
