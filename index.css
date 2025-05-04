@@ -173,17 +173,18 @@ nav ul li a:hover {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 2rem;
+    padding:auto;
     min-height:auto;
-    margin-top: 60px;
 
   }
 
   .hero h1 {
     font-size: 20px;
+    padding: 25px 25px ;
   }
   .hero p {
     font-size: 20px;
+    padding: 25px 25px;
   }
   .hero img {
     max-width: 100%;
@@ -193,6 +194,7 @@ nav ul li a:hover {
   .cta-button {
     font-size: 25px;
     padding: 0.8rem 1.8rem;
+    
   }
 }
 
