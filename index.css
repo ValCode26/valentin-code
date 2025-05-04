@@ -192,6 +192,11 @@ nav ul li a:hover {
     font-size: 25px;
     padding: 0.8rem 1.8rem;
   }
+  .typing {
+    animation: none;
+    border: none;
+    width: auto;
+  }
 }
 
 
