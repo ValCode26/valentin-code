@@ -1,42 +1,17 @@
-
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
-const dropdowns = document.querySelectorAll('.dropdown');
-const overlay = document.getElementById('menuOverlay');
+const nav = document.getElementById('nav');
 
 hamburger.addEventListener('click', () => {
-  const isActive = hamburger.classList.toggle('active');
-  navLinks.classList.toggle('show');
-  overlay.classList.toggle('show');
-
-  document.body.classList.toggle('no-scroll', isActive);
+  hamburger.classList.toggle('active');
+  nav.classList.toggle('active');
 });
 
-overlay.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navLinks.classList.remove('show');
-  overlay.classList.remove('show');
+const navLinks = document.querySelectorAll('.nav-link');
 
-  document.body.classList.remove('no-scroll');
+navLinks.forEach((link, index) => {
+  const delay = index * 1500; // 2 secunde între linkuri
+  setTimeout(() => {
+    link.style.opacity = '1';
+    link.style.animation = `typing 2s steps(20, end), blink 0.8s step-end infinite`;
+  }, delay);
 });
-function toggleModal() {
-  const modal = document.getElementById('authModal');
-  modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
-}
-
-function switchForm(form) {
-  document.getElementById('loginForm').style.display = form === 'login' ? 'block' : 'none';
-  document.getElementById('signupForm').style.display = form === 'signup' ? 'block' : 'none';
-}
-
-function handleLogin() {
-  const email = document.getElementById('loginEmail').value;
-  const pass = document.getElementById('loginPassword').value;
-  alert(`Login cu: ${email} / ${pass}`);
-}
-
-function handleSignup() {
-  const email = document.getElementById('signupEmail').value;
-  const pass = document.getElementById('signupPassword').value;
-  alert(`Cont creat: ${email}`);
-}

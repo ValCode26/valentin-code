@@ -7,112 +7,68 @@
   <title>Valentin Borsan Photography</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://use.typekit.net/jeo8xks.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&display=swap"
+    rel="stylesheet">
 </head>
-
-<body>
-  <nav>
-    <div class="menu-overlay" id="menuOverlay"></div>
-
-    <div class="logo">Valentin Borsan Photography</div>
-
-    <div class="hamburger" id="hamburger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-
-    <div class="nav-links" id="navLinks">
-      <a href="#">About</a>
-      <div class="dropdown">
-        <a href="#">Galleries</a>
-        <div class="dropdown-content">
-          <a href="#">Portraits</a>
-          <a href="#">Landscape</a>
-          <a href="#">Monochrome</a>
-          <a href="#">Urban Landscape</a>
-          <a href="#">Street</a>
-          <a href="#">Animals</a>
-          <a href="#">Macro</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="#">Projects</a>
-        <div class="dropdown-content">
-          <a href="#">Terminillo</a>
-          <a href="#">Roma</a>
-          <a href="#">Double Exposure</a>
-          <a href="#">Out of Focus</a>
-        </div>
-      </div>
-      <a href="#">Shop</a>
-      <a href="#">Contact</a>
-    </div>
+<header>
+  <div class="logo">Valentin Borsan Photography</div>
+  <div class="hamburger" id="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav id="nav">
+    <ul>
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#" class="nav-link">Galleries</a></li>
+      <li><a href="#" class="nav-link">Projects</a></li>
+      <li><a href="#" class="nav-link">Shop</a></li>
+      <li><a href="#" class="nav-link">Contact</a></li>
+    </ul>
   </nav>
+</header>
 
-  <main>
-    <div class="hero">
-      <h1><b>Welcome</b></h1>
-      <h2><b>My work is a pursuit of light, detail, and honest emotion.</b></h2>
-      <h3><b>Thank you for being here!</b><span><b><br>I invite you to explore the stories behind each
-            image.</br></b></span></h3>
-      <a href="/portfolio" class="cta-button">View Portfolio</a>
-    </div>
-    <section id="featured-project" class="project-section">
-      <h2>Terminillo </h2>
-      <div class="project-card">
-        <a href="#">
-          <img src="Terminillo.jpg" alt="Terminillo">
-          <div class="project-info">
-            <h3>Where Earth Touch the Sky</h3>
-            <p> For this photographic project, Terminillo becomes a study in contrasts—from intimate textures of moss
-              and
-              lichen to sweeping panoramas beneath ever-changing skies—where each season tells its own story of light
-              and emotion.</p>
-            <span class="btn">View Project</span>
-          </div>
-        </a>
-      </div>
-      <div class="auth-button-container">
-        <button class="auth-button" onclick="toggleModal()">Login</button>
-      </div>
-    </section>
-    <div id="authModal" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="toggleModal()">&times;</span>
-
-        <div id="loginForm">
-          <h2>Login</h2>
-          <input type="text" placeholder="Email" id="loginEmail">
-          <input type="password" placeholder="Password" id="loginPassword">
-          <button onclick="handleLogin()">Login</button>
-          <p>Don't have an account? <a href="#" onclick="switchForm('signup')">Sign Up</a></p>
+<main>
+  <div class="hero">
+    <h1><b>Welcome</b></h1>
+    <h2><b>My work is a pursuit of light, detail, and honest emotion.</b></h2>
+    <h3><b>Thank you for being here!
+        <h3>I invite you to explore the stories behind each image.</h3>
+        <a href="/portfolio" class="cta-button">Enter the Gallery</a>
+  </div>
+  <section id="featured-project" class="project-section">
+    <h2>Terminillo </h2>
+    <div class="project-card">
+      <a href="#">
+        <img src="Terminillo.jpg" alt="Terminillo">
+        <div class="project-info">
+          <h3>Where Earth Touch the Sky</h3>
+          <p> For this photographic project, Terminillo becomes a study in contrasts—from intimate textures of moss
+            and
+            lichen to sweeping panoramas beneath ever-changing skies—where each season tells its own story of light
+            and emotion.</p>
+          <span class="btn">View Project</span>
         </div>
-
-        <div id="signupForm" style="display:none;">
-          <h2>Sign Up</h2>
-          <input type="text" placeholder="Email" id="signupEmail">
-          <input type="password" placeholder="Parolă" id="signupPassword">
-          <button onclick="handleSignup()">Sign Up</button>
-          <p>Already have an account?  <a href="#" onclick="switchForm('login')">Login</a></p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>&copy; 2025 Valentin Borsan. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="https://instagram.com/valentinborsan" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://facebook.com/valentinborsan" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://linkedin.com/in/valentinborsan" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
       </a>
     </div>
-  </footer>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2025 Valentin Borsan. All rights reserved.</p>
+  <div class="social-icons">
+    <a href="#" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</footer>
 </body>
 <script src="index.js"></script>
 
