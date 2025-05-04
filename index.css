@@ -8,11 +8,6 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(background.jpg);
-  background-position: 60% 40%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: orangered;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
@@ -30,15 +25,17 @@ header {
   color: #fff;
   position: relative;
   z-index: 20;
+  background-color: orangered;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 600;
   letter-spacing: 2px;
-  color: orangered;
-  font-family: "Alfa Slab One", serif;
-  font-weight: 400;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -66,7 +63,7 @@ nav {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(17, 17, 17, 0.85);
+  background-color: white;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: flex;
@@ -82,9 +79,9 @@ nav::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('Terminillo.jpg') no-repeat center center / cover;
+  background: url('Background_Nav.jpg') no-repeat center center / cover;
   z-index: -1;
-  filter: blur(6px) brightness(0.6);
+  filter: blur(6px) brightness(0.8);
 }
 
 nav.active {
@@ -181,6 +178,7 @@ nav ul li a:hover {
     .hero h1 {
       font-size: 2.2rem;
   }
+  
   .hero img {
       max-width: 100%;
       height: auto;
@@ -220,169 +218,138 @@ nav ul li a:hover {
 }
 
 .hero {
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  background: url('Background_hero.jpg') center/cover no-repeat;
+  position: relative;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  top:-80px;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
-
-.hero h1 {
-  font-size: 60px;
-  padding: 30px 30px;
-  color: orangered;
-  margin: 35px;
+.hero p {
+  font-size: 2.4rem;
+  margin: 1rem 0;
 }
-
-.hero h2 {
-  font-size: 40px;
-  margin: 35px;
-  color: white;
-}
-
-.hero h3 {
-  font-size: 30px;
-  margin: 35px;
-  color: orangered;
-
-}
-
 .cta-button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font-size: 45px;
+  padding: 0.8rem 2rem;
+  font-size: 3rem;
+  color: #fff;
+  background-color: orangered;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   text-decoration: none;
-  color: #ffffff;
-  background-color: transparent;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  opacity: 0.7;
-  margin-top: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: uppercase;
-
+  margin-top: 1rem;
+  
 }
-
-.cta-button:hover {
-  background-color: transparent;
-  transform: translateY(-2px);
-  color: orangered;
-  opacity: 1;
-}
-
-.cta-button:active {
-  transform: translateY(0);
-}
-
-.project-cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-
-
-}
-
-.project-section {
-  padding: 4rem 2rem;
+section  {
+  padding: 5rem 2rem;
   text-align: center;
-  background-color: transparent;
-}
-
-.project-section h2 {
-  font-size: 50px;
-  margin-bottom: 1.5rem;
-  color: orangered;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  margin-bottom: -60px;
 
 }
+ .portfolio{
+  padding: 5rem 2rem;
+  text-align: center;
+  margin-bottom: -60px;
 
-/* Card proiect */
-.project-card {
-  display: inline-block;
-  max-width: 300px;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
 }
-
-.project-card:hover {
-  transform: translateY(-4px);
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
 }
-
-.project-card img {
+.gallery img {
   width: 100%;
-  display: block;
+  border-radius: 8px;
 }
+ .aboutme {
+  max-width: 800px;
+  margin: auto;
 
-.project-info {
-  padding: 1rem;
-  background-color: transparent;
 }
+.aboutme img{
+  width: 100%;
+  max-width: auto;
 
-.project-info h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.5em;
-  color: white;
-  font-family: "Alfa Slab One", serif;
-  font-weight: 400;
-  font-style: normal;
 }
-
-.project-info p {
-  margin: 0 0 1rem;
-  font-size: 25px;
-  color: white;
-  font-family: "Montserrat", sans-serif;
+section h2{
+font-size: 4rem;
+font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
-
-/* Re-folosești butonul dinainte sau poți crea unul specific */
-.project-info .btn {
+.about p{
+  font-size: 2rem;
+font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+ .contact h2{
+  font-size: 3rem;
+font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.contact .cta-button{
   display: inline-block;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font-size: 45px;
-  font-weight: 600;
+  padding: 0.8rem 2rem;
+  font-size: 3rem;
+  color: #fff;
+  background-color: orangered;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   text-decoration: none;
-  color: white;
-  background-color: transparent;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  opacity: 0.7;
-  margin-top: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  margin-top: 1rem;
+  
 }
 
-.project-info .btn:hover {
-  background-color: transparent;
-  transform: translateY(-2px);
-  color: orangered;
-  opacity: 1;
+
+.photo-gradient {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, #000, #888, #000);
+  margin: 4rem auto;
+  width: 70%;
+  opacity: 0.8;
 }
+
 
 .site-footer {
   background-color: transparent;
   text-align: center;
   padding: 2rem 1rem;
-  font-size: 30px;
-  color: white;
+  font-size: 1.5rem;
+  color: orangered;
   margin-top: 4rem;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
