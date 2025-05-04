@@ -36,6 +36,10 @@
     <div class="hero-content">
       <h1>Every Moment Tells a Story</h1>
       <p>Discover timeless emotions through my lens.</p>
+      <div class="hero-buttons">
+        <a href="#" class="hero-btn login">Login</a>
+        <a href="#" class="hero-btn signup">Sign Up</a>
+      </div>
       <a href="#" class="cta-button">Explore My Work</a>
     </div>
   </section>
@@ -72,7 +76,28 @@
     <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
 </footer>
+<div id="auth-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div class="modal-tabs">
+      <button id="show-login" class="tab active">Login</button>
+      <button id="show-signup" class="tab">Sign Up</button>
+    </div>
+    <form id="login-form" class="auth-form">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <form id="signup-form" class="auth-form hidden">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
 </body>
+
 <script src="index.js"></script>
 
 </html>
