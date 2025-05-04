@@ -33,9 +33,8 @@ header {
   font-weight: 600;
   letter-spacing: 2px;
   color: white;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
+  font-family: "brushland", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -131,10 +130,10 @@ nav ul li a {
   text-decoration: none;
   color: #ffffff;
   transition: color 0.3s ease;
-  font-family: "Alfa Slab One", serif !important;
+  font-family: "brushland", sans-serif !important;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem !important;
+  font-size: 3.5rem !important;
 
 }
 
@@ -160,29 +159,32 @@ nav ul li a:hover {
   nav ul li a {
     font-size: 1.6rem;
   }
-  
-    .logo {
-      font-size: 2rem;
-      text-align: center;
-    }
-  
-    header {
-      padding: 1rem;
-    }
-    .hero {
-      flex-direction: column;
-      text-align: center;
-      padding: 2rem;
-  
-    }
-    .hero h1 {
-      font-size: 2.2rem;
+
+  .logo {
+    font-size: 2rem;
+    text-align: center;
   }
-  
+
+  header {
+    padding: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
   .hero img {
-      max-width: 100%;
-      height: auto;
+    max-width: 100%;
+    height: auto;
   }
+
   .cta-button {
     font-size: 1.4rem;
     padding: 0.8rem 1.8rem;
@@ -211,7 +213,9 @@ nav ul li a:hover {
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid #fff;
-  font-family: 'Dancing Script', cursive;
+  font-family: "brushland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 3.5rem;
   color: #ffffff;
   opacity: 0;
@@ -226,7 +230,9 @@ nav ul li a:hover {
   height: 100vh;
   background: url('Background_hero.jpg') center/cover no-repeat;
   position: relative;
+  color: white;
 }
+
 .hero::before {
   content: '';
   position: absolute;
@@ -236,27 +242,33 @@ nav ul li a:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .hero-content {
   position: relative;
   z-index: 1;
   max-width: 700px;
-  top:-80px;
+  top: -80px;
 }
+
 .hero h1 {
-  font-size: 4rem;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
+  font-size: 3.5rem;
+  font-family: "brushland", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
+
 .hero p {
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin: 1rem 0;
+  font-family: "brushland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 .cta-button {
   display: inline-block;
   padding: 0.8rem 2rem;
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #fff;
   background-color: orangered;
   border: none;
@@ -264,65 +276,78 @@ nav ul li a:hover {
   cursor: pointer;
   text-decoration: none;
   margin-top: 1rem;
-  
+  font-family: "brushland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
-section  {
+
+section {
   padding: 5rem 2rem;
   text-align: center;
   margin-bottom: -60px;
 
 }
- .portfolio{
+
+.portfolio {
   padding: 5rem 2rem;
   text-align: center;
   margin-bottom: -60px;
 
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   padding: 2rem;
 }
+
 .gallery img {
   width: 100%;
   border-radius: 8px;
 }
- .aboutme {
+
+.aboutme {
   max-width: 800px;
   margin: auto;
 
 }
-.aboutme img{
+
+.aboutme img {
   width: 100%;
   max-width: auto;
 
 }
-section h2{
-font-size: 4rem;
-font-family: "Dancing Script", cursive;
+
+section h2 {
+  font-size: 3.5rem;
+  font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
-.about p{
+
+.about p {
   font-size: 2rem;
-font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  color: black;
 }
- .contact h2{
-  font-size: 3rem;
-font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
+
+.contact h2 {
+  font-size: 2.4rem;
+  font-family: "brushland", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
-.contact .cta-button{
+
+.contact .cta-button {
   display: inline-block;
   padding: 0.8rem 2rem;
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: #fff;
   background-color: orangered;
   border: none;
@@ -330,7 +355,10 @@ font-family: "Dancing Script", cursive;
   cursor: pointer;
   text-decoration: none;
   margin-top: 1rem;
-  
+  font-family: "brushland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 
@@ -348,29 +376,25 @@ font-family: "Dancing Script", cursive;
   background-color: transparent;
   text-align: center;
   padding: 2rem 1rem;
-  font-size: 1.5rem;
-  color: orangered;
+  font-size: 1.4rem;
+  color: black;
   margin-top: 4rem;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "brushland", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.site-footer .social-icons {
+.social-icons {
   margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
 }
 
-.site-footer .social-icons a {
+.social-icons a {
+  margin: 0 10px;
+  color: black;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
   color: orangered;
-  font-size: 25px;
-  transition: color 0.2s ease;
-
-}
-
-.site-footer .social-icons a:hover {
-  color: white;
 }
