@@ -155,7 +155,7 @@ nav ul li a:hover {
   transform: rotate(-45deg) translateY(-8px);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   nav ul li a {
     font-size: 20px;
   }
