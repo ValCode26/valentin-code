@@ -163,7 +163,34 @@ nav ul li a:hover {
   nav ul li a {
     font-size: 1.6rem;
   }
+  
+    .logo {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    header {
+      padding: 1rem;
+    }
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+  
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+  }
+  .hero img {
+      max-width: 100%;
+      height: auto;
+  }
+  .cta-button {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.8rem;
+  }
 }
+
 
 @keyframes typing {
   from {
