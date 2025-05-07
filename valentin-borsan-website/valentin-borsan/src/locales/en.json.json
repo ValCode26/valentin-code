@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "title": "Valentin Borsan Photography",
+    "about": "About",
+    "projects": "Projects",
+    "galleries": "Galleries",
+    "shop": "Shop",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I’m a professional photographer and editor, passionate about capturing authentic moments and telling visual stories with emotion and depth.",
+    "photoEditingTitle": "Photo Editing Philosophy",
+    "paragraph2": "I edit with a focus on natural tones and clean aesthetics, enhancing each image to reflect its true mood — never overprocessed, always intentional.",
+    "webDesignTitle": "Web Design & Development",
+    "webDesignDescription": "I create modern, responsive websites using tools like React and CSS Modules, blending clean code with thoughtful design to build digital spaces that work."
+  }
+}

@@ -1,0 +1,11 @@
+:root{
+    /*Colours*/
+    --color-text:#fff;  
+    --color-primary:#5C6BC0;
+    --color-secondary:#FFB300;
+    --color-dark:#1E1E1E;
+    --color-bg:#F5F5F5;
+
+    /*Fonts*/
+    --font-DancingScript:"Dancing Script", cursive;
+}

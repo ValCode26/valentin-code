@@ -1,0 +1,60 @@
+@import "../../vars.css";
+
+
+.GalleryPreview {
+    padding: 3rem 1.5rem;
+    background-color:transparent;
+  }
+  
+  .GalleryTitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .GalleryGgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .GalleryItem {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .GalleryImage {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .GalleryItem:hover .GalleryImage {
+    transform: scale(1.05);
+  }
+  
+  .GalleryButtonWrapper {
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .GalleryButton {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 80px;
+    background: var(--color-primary);
+    padding: 1px 22px;
+  }
+  
+  .GalleryButton:hover {
+    background-color: #333;
+  }
+  

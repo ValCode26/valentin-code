@@ -1,0 +1,22 @@
+[
+  {
+    "title": " Roma",
+    "imageSrc": "/images/roma.project.jpg",
+    "description": " Hidden Rome: The Mysteries of an Eternal City",
+    "Explore": "https://valentinborsan.art/roma"
+  },
+
+  {
+    "title": " Terminillo",
+    "imageSrc": "/images/terminillo.project.jpg",
+    "description": " Terminillo: Where Earth Touches the Sky",
+    "esxplore": "https://valentinborsan.art/terminillo"
+  },
+
+  {
+    "title": " Double Exposure",
+    "imageSrc": "/images/double.exposure.jpg",
+    "description": " Double Exposure",
+    "explore": "https://valentinborsan.art/double-exposure"
+  }
+]

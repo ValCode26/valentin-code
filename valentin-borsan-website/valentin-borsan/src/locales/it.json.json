@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "title": "Fotografia Valentin Borsan",
+    "about": "Chi sono",
+    "projects": "Progetti",
+    "galleries": "Gallerie",
+    "shop": "Negozio",
+    "contact": "Contatti"
+  },
+  "about": {
+    "AboutMe": "Chi sono",
+    "title": "Fotografo profesionista",
+    "paragraph1": "Sono un fotografo professionista e un editor appassionato di catturare momenti autentici e raccontare storie visive con emozione e profondità.",
+    "paragraph2": "Mi concentro su tonalità naturali e estetiche pulite, migliorando ogni immagine per riflettere il suo vero umore, mai sovraelaborato, sempre intenzionale.",
+    "photoEditingTitle": "Filosofia di editing fotografico",
+    "webDesignTitle": "Design e sviluppo web",
+    "webDesignDescription": "Creo siti web moderni e responsivi utilizzando strumenti come React e CSS Modules, combinando codice pulito con design riflessivi per costruire spazi digitali che funzionano."
+  }
+}
